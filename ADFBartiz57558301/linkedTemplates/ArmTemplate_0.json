@@ -176,7 +176,220 @@
 								"tableOption": "autoCreate",
 								"disableMetricsCollection": false
 							},
-							"enableStaging": false
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"path": "$['Title']"
+										},
+										"sink": {
+											"name": "Title"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Year']"
+										},
+										"sink": {
+											"name": "Year"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Rated']"
+										},
+										"sink": {
+											"name": "Rated"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Released']"
+										},
+										"sink": {
+											"name": "Released"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Runtime']"
+										},
+										"sink": {
+											"name": "Runtime"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Genre']"
+										},
+										"sink": {
+											"name": "Genre"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Director']"
+										},
+										"sink": {
+											"name": "Director"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Writer']"
+										},
+										"sink": {
+											"name": "Writer"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Actors']"
+										},
+										"sink": {
+											"name": "Actors"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Plot']"
+										},
+										"sink": {
+											"name": "Plot"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Language']"
+										},
+										"sink": {
+											"name": "Language"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Country']"
+										},
+										"sink": {
+											"name": "Country"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Awards']"
+										},
+										"sink": {
+											"name": "Awards"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Poster']"
+										},
+										"sink": {
+											"name": "Poster"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Ratings'][0]['Source']"
+										},
+										"sink": {
+											"name": "Source"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Ratings'][0]['Value']"
+										},
+										"sink": {
+											"name": "Value"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Metascore']"
+										},
+										"sink": {
+											"name": "Metascore"
+										}
+									},
+									{
+										"source": {
+											"path": "$['imdbRating']"
+										},
+										"sink": {
+											"name": "imdbRating"
+										}
+									},
+									{
+										"source": {
+											"path": "$['imdbVotes']"
+										},
+										"sink": {
+											"name": "imdbVotes"
+										}
+									},
+									{
+										"source": {
+											"path": "$['imdbID']"
+										},
+										"sink": {
+											"name": "imdbID"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Type']"
+										},
+										"sink": {
+											"name": "Type"
+										}
+									},
+									{
+										"source": {
+											"path": "$['DVD']"
+										},
+										"sink": {
+											"name": "DVD"
+										}
+									},
+									{
+										"source": {
+											"path": "$['BoxOffice']"
+										},
+										"sink": {
+											"name": "BoxOffice"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Production']"
+										},
+										"sink": {
+											"name": "Production"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Website']"
+										},
+										"sink": {
+											"name": "Website"
+										}
+									},
+									{
+										"source": {
+											"path": "$['Response']"
+										},
+										"sink": {
+											"name": "Response"
+										}
+									}
+								]
+							}
 						},
 						"inputs": [
 							{
