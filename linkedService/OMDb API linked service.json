@@ -2,6 +2,15 @@
 	"name": "OMDb API linked service",
 	"properties": {
 		"description": "Linked service for OMDb API based of custom key",
+		"parameters": {
+			"baseUrl": {
+				"type": "string",
+				"defaultValue": "http://www.omdbapi.com/?apikey=f25e6e5b"
+			},
+			"t": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
