@@ -56,7 +56,10 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"movie_title": "Wimbledon"
+						}
 					}
 				],
 				"outputs": [
