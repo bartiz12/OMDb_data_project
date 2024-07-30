@@ -78,12 +78,6 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"description": "Linked service for OMDb API based of custom key",
-				"parameters": {
-					"t": {
-						"type": "string",
-						"defaultValue": "Wimbledon"
-					}
-				},
 				"annotations": [],
 				"type": "RestService",
 				"typeProperties": {
@@ -185,15 +179,7 @@
 			"properties": {
 				"linkedServiceName": {
 					"referenceName": "OMDb API linked service",
-					"type": "LinkedServiceReference",
-					"parameters": {
-						"t": "Wimbledon"
-					}
-				},
-				"parameters": {
-					"t": {
-						"type": "string"
-					}
+					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
 				"type": "RestResource",
@@ -576,9 +562,7 @@
 							{
 								"referenceName": "RestResource1",
 								"type": "DatasetReference",
-								"parameters": {
-									"t": "Wimbledon"
-								}
+								"parameters": {}
 							}
 						],
 						"outputs": [
