@@ -29,7 +29,7 @@
 		},
 		"OMDb API linked service_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "@{concat(linkedService().baseUrl, '&', linkedService().t)}"
+			"defaultValue": "@{concat(linkedService().baseUrl, '&t=', linkedService().t)}"
 		}
 	},
 	"variables": {

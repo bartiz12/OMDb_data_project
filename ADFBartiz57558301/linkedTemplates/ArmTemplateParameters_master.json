@@ -21,7 +21,7 @@
 			"value": "sqladmin"
 		},
 		"OMDb API linked service_properties_typeProperties_url": {
-			"value": "@{concat(linkedService().baseUrl, '&', linkedService().t)}"
+			"value": "@{concat(linkedService().baseUrl, '&t=', linkedService().t)}"
 		},
 		"containerUri": {
 			"value": ""
