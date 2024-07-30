@@ -14,7 +14,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "@{concat(linkedService().baseUrl, '?', linkedService().t)}",
+			"url": "@{concat(linkedService().baseUrl, '&', linkedService().t)}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
