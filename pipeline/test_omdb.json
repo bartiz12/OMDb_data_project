@@ -319,7 +319,14 @@
 			{
 				"name": "Lookup1",
 				"type": "Lookup",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Clear OMDB movie table",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -344,6 +351,26 @@
 						}
 					},
 					"firstRowOnly": false
+				}
+			},
+			{
+				"name": "Clear OMDB movie table",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[stg_omdb].[Truncate_omdb_test]"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSQLDataWarehouse",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
