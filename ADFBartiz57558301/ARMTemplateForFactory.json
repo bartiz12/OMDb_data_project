@@ -557,8 +557,8 @@
 								"referenceName": "AzureSqlTable1",
 								"type": "DatasetReference",
 								"parameters": {
-									"schemaName": "dbo",
-									"tableName": "revenues_daily"
+									"schemaName": "stg_csv",
+									"tableName": "revenues_per_day_csv"
 								}
 							}
 						]
