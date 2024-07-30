@@ -4,7 +4,8 @@
 		"description": "Linked service for OMDb API based of custom key",
 		"parameters": {
 			"t": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Wimbledon"
 			}
 		},
 		"annotations": [],
