@@ -14,7 +14,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "http://www.omdbapi.com/?apikey=f25e6e5b",
+			"url": "@{concat(linkedService().baseUrl, '?', linkedService().t)}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
