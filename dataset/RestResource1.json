@@ -3,15 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "OMDb API linked service",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"t": "Wimbledon"
-			}
-		},
-		"parameters": {
-			"t": {
-				"type": "string"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "RestResource",

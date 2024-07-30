@@ -56,10 +56,7 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource1",
-						"type": "DatasetReference",
-						"parameters": {
-							"t": "Wimbledon"
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
