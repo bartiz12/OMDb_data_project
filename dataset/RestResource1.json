@@ -5,7 +5,8 @@
 			"referenceName": "OMDb API linked service",
 			"type": "LinkedServiceReference",
 			"parameters": {
-				"baseUrl": "http://www.omdbapi.com/?apikey=f25e6e5b"
+				"baseUrl": "http://www.omdbapi.com/?apikey=f25e6e5b",
+				"t": "Wimbledon"
 			}
 		},
 		"annotations": [],
