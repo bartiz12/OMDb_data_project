@@ -29,7 +29,7 @@
 		},
 		"OMDb API linked service_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "http://www.omdbapi.com/?i=tt3896198&apikey=f25e6e5b"
+			"defaultValue": "http://www.omdbapi.com/?apikey=f25e6e5b"
 		},
 		"containerUri": {
 			"type": "string",
