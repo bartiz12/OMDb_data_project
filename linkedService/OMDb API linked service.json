@@ -10,7 +10,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "http://www.omdbapi.com/?apikey=f25e6e5b?t=Wimbledon",
+			"url": "http://www.omdbapi.com/?apikey=f25e6e5b",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
