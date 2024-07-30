@@ -6,7 +6,16 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"baseUrl": "http://www.omdbapi.com/?apikey=f25e6e5b",
-				"t": "Wimbledon"
+				"t": {
+					"value": "@dataset().t_parameter",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"t_parameter": {
+				"type": "string",
+				"defaultValue": "Wimbledon"
 			}
 		},
 		"annotations": [],
