@@ -13,16 +13,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "schemaName",
-						"value": "dbo"
-					},
-					{
-						"name": "tableName",
-						"value": "omdb_test"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "RestSource",
@@ -51,7 +42,11 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"schemaName": "dbo",
+							"tableName": "omdb_test"
+						}
 					}
 				]
 			}
