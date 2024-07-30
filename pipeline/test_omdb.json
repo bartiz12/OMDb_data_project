@@ -125,16 +125,236 @@
 									"mappings": [
 										{
 											"source": {
-												"path": "$['Response']"
+												"path": "$['Title']"
 											},
 											"sink": {
-												"name": "Response",
+												"name": "Title",
 												"type": "String"
 											}
 										},
 										{
 											"source": {
-												"path": "$['Error']"
+												"path": "$['Year']"
+											},
+											"sink": {
+												"name": "Year",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Rated']"
+											},
+											"sink": {
+												"name": "Rated",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Released']"
+											},
+											"sink": {
+												"name": "Released",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Runtime']"
+											},
+											"sink": {
+												"name": "Runtime",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Genre']"
+											},
+											"sink": {
+												"name": "Genre",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Director']"
+											},
+											"sink": {
+												"name": "Director",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Writer']"
+											},
+											"sink": {
+												"name": "Writer",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Actors']"
+											},
+											"sink": {
+												"name": "Actors",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Plot']"
+											},
+											"sink": {
+												"name": "Plot",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Language']"
+											},
+											"sink": {
+												"name": "Language",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Country']"
+											},
+											"sink": {
+												"name": "Country",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Awards']"
+											},
+											"sink": {
+												"name": "Awards",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Poster']"
+											},
+											"sink": {
+												"name": "Poster",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Ratings'][0]['Source']"
+											},
+											"sink": {
+												"name": "Source",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Ratings'][0]['Value']"
+											},
+											"sink": {
+												"name": "Value",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Metascore']"
+											},
+											"sink": {
+												"name": "Metascore",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['imdbRating']"
+											},
+											"sink": {
+												"name": "imdbRating",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['imdbVotes']"
+											},
+											"sink": {
+												"name": "imdbVotes",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['imdbID']"
+											},
+											"sink": {
+												"name": "imdbID",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Type']"
+											},
+											"sink": {
+												"name": "Type",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['DVD']"
+											},
+											"sink": {
+												"name": "DVD",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['BoxOffice']"
+											},
+											"sink": {
+												"name": "BoxOffice",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Production']"
+											},
+											"sink": {
+												"name": "Production",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Website']"
+											},
+											"sink": {
+												"name": "Website",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "$['Response']"
+											},
+											"sink": {
+												"name": "Response",
+												"type": "String"
 											}
 										}
 									],
