@@ -61,7 +61,7 @@
 						"referenceName": "RestResource1",
 						"type": "DatasetReference",
 						"parameters": {
-							"movie_title": "Wimbledon"
+							"t": "Wimbledon"
 						}
 					}
 				],
