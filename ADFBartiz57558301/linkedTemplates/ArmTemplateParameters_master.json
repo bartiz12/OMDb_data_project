@@ -21,7 +21,7 @@
 			"value": "sqladmin"
 		},
 		"OMDb API linked service_properties_typeProperties_url": {
-			"value": "http://www.omdbapi.com/?apikey=f25e6e5b"
+			"value": "http://www.omdbapi.com/?apikey=f25e6e5b?t=Wimbledon"
 		},
 		"containerUri": {
 			"value": ""
