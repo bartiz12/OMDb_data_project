@@ -2,11 +2,6 @@
 	"name": "OMDb API linked service",
 	"properties": {
 		"description": "Linked service for OMDb API based of custom key",
-		"parameters": {
-			"t": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
