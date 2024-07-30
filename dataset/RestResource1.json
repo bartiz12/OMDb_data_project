@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "OMDb API linked service",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"baseUrl": "http://www.omdbapi.com/?apikey=f25e6e5b"
+			}
 		},
 		"annotations": [],
 		"type": "RestResource",
