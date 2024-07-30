@@ -5,6 +5,11 @@
 			"referenceName": "OMDb API linked service",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"movie_title": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
