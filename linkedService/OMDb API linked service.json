@@ -2,10 +2,15 @@
 	"name": "OMDb API linked service",
 	"properties": {
 		"description": "Linked service for OMDb API based of custom key",
+		"parameters": {
+			"t": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "http://www.omdbapi.com/?apikey=f25e6e5b",
+			"url": "http://www.omdbapi.com/?apikey=f25e6e5b?t=Wimbledon",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
