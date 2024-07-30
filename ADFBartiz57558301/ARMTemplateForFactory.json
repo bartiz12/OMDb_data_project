@@ -29,7 +29,7 @@
 		},
 		"OMDb API linked service_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "http://www.omdbapi.com/?apikey=f25e6e5b?t=Wimbledon"
+			"defaultValue": "http://www.omdbapi.com/?apikey=f25e6e5b"
 		}
 	},
 	"variables": {
@@ -527,7 +527,9 @@
 				"linkedServiceName": {
 					"referenceName": "OMDb API linked service",
 					"type": "LinkedServiceReference",
-					"parameters": {}
+					"parameters": {
+						"t": "Wimbledon"
+					}
 				},
 				"parameters": {
 					"t": {
@@ -587,7 +589,8 @@
 				"description": "Linked service for OMDb API based of custom key",
 				"parameters": {
 					"t": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "Wimbledon"
 					}
 				},
 				"annotations": [],
