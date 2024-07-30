@@ -57,8 +57,8 @@
 								},
 								"sink": {
 									"name": "date",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"type": "DateTime",
+									"physicalType": "date"
 								}
 							},
 							{
@@ -81,8 +81,8 @@
 								},
 								"sink": {
 									"name": "revenue",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							},
 							{
@@ -93,8 +93,8 @@
 								},
 								"sink": {
 									"name": "theaters",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							},
 							{
@@ -113,7 +113,8 @@
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
+							"treatBooleanAsNumber": false,
+							"dateFormat": "yyyy-MM-dd"
 						}
 					}
 				},
