@@ -408,7 +408,9 @@
 							{
 								"referenceName": "RestResource1",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"t_parameter": "Forrest gump"
+								}
 							}
 						],
 						"outputs": [
@@ -421,10 +423,359 @@
 								}
 							}
 						]
+					},
+					{
+						"name": "ForEach1",
+						"type": "ForEach",
+						"dependsOn": [
+							{
+								"activity": "Lookup1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"items": {
+								"value": "@activity('Lookup1').output.value",
+								"type": "Expression"
+							},
+							"activities": [
+								{
+									"name": "Copy data1_copy1",
+									"type": "Copy",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "0.12:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"source": {
+											"type": "RestSource",
+											"httpRequestTimeout": "00:01:40",
+											"requestInterval": "00.00:00:00.010",
+											"requestMethod": "GET",
+											"paginationRules": {
+												"supportRFC5988": "true"
+											}
+										},
+										"sink": {
+											"type": "AzureSqlSink",
+											"writeBehavior": "insert",
+											"sqlWriterUseTableLock": false,
+											"disableMetricsCollection": false
+										},
+										"enableStaging": false,
+										"translator": {
+											"type": "TabularTranslator",
+											"mappings": [
+												{
+													"source": {
+														"path": "$['Title']"
+													},
+													"sink": {
+														"name": "Title",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Year']"
+													},
+													"sink": {
+														"name": "Year",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Rated']"
+													},
+													"sink": {
+														"name": "Rated",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Released']"
+													},
+													"sink": {
+														"name": "Released",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Runtime']"
+													},
+													"sink": {
+														"name": "Runtime",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Genre']"
+													},
+													"sink": {
+														"name": "Genre",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Director']"
+													},
+													"sink": {
+														"name": "Director",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Writer']"
+													},
+													"sink": {
+														"name": "Writer",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Actors']"
+													},
+													"sink": {
+														"name": "Actors",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Plot']"
+													},
+													"sink": {
+														"name": "Plot",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Language']"
+													},
+													"sink": {
+														"name": "Language",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Country']"
+													},
+													"sink": {
+														"name": "Country",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Awards']"
+													},
+													"sink": {
+														"name": "Awards",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Poster']"
+													},
+													"sink": {
+														"name": "Poster",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Ratings'][0]['Source']"
+													},
+													"sink": {
+														"name": "Source",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Ratings'][0]['Value']"
+													},
+													"sink": {
+														"name": "Value",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Metascore']"
+													},
+													"sink": {
+														"name": "Metascore",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['imdbRating']"
+													},
+													"sink": {
+														"name": "imdbRating",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['imdbVotes']"
+													},
+													"sink": {
+														"name": "imdbVotes",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['imdbID']"
+													},
+													"sink": {
+														"name": "imdbID",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Type']"
+													},
+													"sink": {
+														"name": "Type",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['DVD']"
+													},
+													"sink": {
+														"name": "DVD",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['BoxOffice']"
+													},
+													"sink": {
+														"name": "BoxOffice",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Production']"
+													},
+													"sink": {
+														"name": "Production",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Website']"
+													},
+													"sink": {
+														"name": "Website",
+														"type": "String"
+													}
+												},
+												{
+													"source": {
+														"path": "$['Response']"
+													},
+													"sink": {
+														"name": "Response",
+														"type": "String"
+													}
+												}
+											],
+											"collectionReference": ""
+										}
+									},
+									"inputs": [
+										{
+											"referenceName": "RestResource1",
+											"type": "DatasetReference",
+											"parameters": {
+												"t_parameter": {
+													"value": "@item()",
+													"type": "Expression"
+												}
+											}
+										}
+									],
+									"outputs": [
+										{
+											"referenceName": "AzureSqlTable1",
+											"type": "DatasetReference",
+											"parameters": {
+												"schemaName": "stg_omdb",
+												"tableName": "omdb_test"
+											}
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"name": "Lookup1",
+						"type": "Lookup",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "AzureSqlSource",
+								"sqlReaderQuery": "select distinct top 10  [title]\nfrom stg_csv.revenues_per_day_csv",
+								"queryTimeout": "02:00:00",
+								"partitionOption": "None"
+							},
+							"dataset": {
+								"referenceName": "AzureSqlTable1",
+								"type": "DatasetReference",
+								"parameters": {
+									"schemaName": "stg_csv",
+									"tableName": "revenues_per_day_csv"
+								}
+							},
+							"firstRowOnly": false
+						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"variables": {
+					"movieTitlesArray": {
+						"type": "Array"
+					}
 				},
 				"annotations": []
 			},
