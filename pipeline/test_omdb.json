@@ -338,7 +338,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "select distinct top 10  [title]\nfrom stg_csv.revenues_per_day_csv",
+						"sqlReaderQuery": "select distinct [title]\nfrom stg_csv.revenues_per_day_csv",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
