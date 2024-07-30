@@ -537,7 +537,7 @@
 				"type": "RestResource",
 				"typeProperties": {
 					"relativeUrl": {
-						"value": "%t=@dataset().movie_title",
+						"value": "@concat('%t=', dataset().movie_title)",
 						"type": "Expression"
 					}
 				},
