@@ -12,12 +12,6 @@
 		},
 		"annotations": [],
 		"type": "RestResource",
-		"typeProperties": {
-			"relativeUrl": {
-				"value": "@concat('%t=', dataset().movie_title)",
-				"type": "Expression"
-			}
-		},
 		"schema": []
 	}
 }
