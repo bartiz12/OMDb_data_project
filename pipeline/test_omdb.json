@@ -308,7 +308,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"schemaName": "stg_omdb",
-										"tableName": "omdb_test"
+										"tableName": "omdb_movies"
 									}
 								}
 							]
