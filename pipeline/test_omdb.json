@@ -366,7 +366,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[stg_omdb].[Truncate_omdb_test]"
+					"storedProcedureName": "[stg_omdb].[Truncate_omdb_movies]"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureSQLDataWarehouse",
